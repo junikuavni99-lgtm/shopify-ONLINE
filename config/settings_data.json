@@ -1,0 +1,73 @@
+{
+  "current": {
+    "logo": null,
+    "logo_width": 120,
+    "favicon": null,
+    "brand_tagline": "Luxury care for modern pets",
+    "brand_description": "Pawfect is a luxury pet care house crafting grooming, nutrition, daycare and design objects for beloved companions.",
+
+    "color_background": "#F6F1E7",
+    "color_text": "#14110F",
+    "color_accent": "#C9A227",
+    "color_secondary": "#F0654F",
+    "color_tertiary": "#8FCFB4",
+    "color_button_bg": "#14110F",
+    "color_button_text": "#F6F1E7",
+    "gradient_hero": "linear-gradient(135deg, #F6F1E7 0%, #F3E3CE 100%)",
+
+    "font_heading": "assistant_n4",
+    "heading_scale": 100,
+    "heading_transform": "none",
+    "font_body": "assistant_n4",
+    "body_scale": 100,
+
+    "page_width": 1280,
+    "section_spacing": 96,
+    "corner_radius": 24,
+    "show_grain": true,
+
+    "enable_reveal": true,
+    "enable_tilt": true,
+    "enable_parallax": true,
+    "animation_speed": 100,
+
+    "card_show_vendor": false,
+    "card_show_secondary_image": true,
+    "card_show_quick_add": true,
+    "card_image_ratio": "square",
+
+    "cart_show_note": true,
+    "cart_free_shipping_bar": true,
+    "cart_free_shipping_threshold": 150,
+    "cart_type": "page",
+
+    "social_instagram_link": "",
+    "social_facebook_link": "",
+    "social_tiktok_link": "",
+    "social_youtube_link": "",
+    "social_pinterest_link": "",
+
+    "predictive_search_enabled": true,
+    "currency_code_enabled": false,
+    "show_country_selector": true,
+    "show_language_selector": true
+  },
+  "presets": {
+    "Default": {
+      "color_background": "#F6F1E7",
+      "color_text": "#14110F",
+      "color_accent": "#C9A227",
+      "color_secondary": "#F0654F",
+      "color_tertiary": "#8FCFB4"
+    },
+    "Midnight": {
+      "color_background": "#14110F",
+      "color_text": "#F6F1E7",
+      "color_accent": "#C9A227",
+      "color_secondary": "#F0654F",
+      "color_tertiary": "#8FCFB4",
+      "color_button_bg": "#C9A227",
+      "color_button_text": "#14110F"
+    }
+  }
+}

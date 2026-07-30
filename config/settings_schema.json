@@ -1,0 +1,116 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Pawfect",
+    "theme_version": "1.0.0",
+    "theme_author": "Pawfect Studio",
+    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
+    "theme_support_url": "https://help.shopify.com/en/support"
+  },
+  {
+    "name": "Brand",
+    "settings": [
+      { "type": "header", "content": "Logo & identity" },
+      { "type": "image_picker", "id": "logo", "label": "Logo image" },
+      { "type": "range", "id": "logo_width", "min": 60, "max": 260, "step": 10, "unit": "px", "label": "Logo width", "default": 120 },
+      { "type": "image_picker", "id": "favicon", "label": "Favicon", "info": "32 x 32px .png recommended" },
+      { "type": "text", "id": "brand_tagline", "label": "Brand tagline", "default": "Luxury care for modern pets" },
+      { "type": "textarea", "id": "brand_description", "label": "Brand description", "default": "Pawfect is a luxury pet care house crafting grooming, nutrition, daycare and design objects for beloved companions." }
+    ]
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      { "type": "header", "content": "Base palette" },
+      { "type": "color", "id": "color_background", "label": "Background", "default": "#F6F1E7" },
+      { "type": "color", "id": "color_text", "label": "Text", "default": "#14110F" },
+      { "type": "color", "id": "color_accent", "label": "Accent (gold)", "default": "#C9A227" },
+      { "type": "color", "id": "color_secondary", "label": "Secondary (coral)", "default": "#F0654F" },
+      { "type": "color", "id": "color_tertiary", "label": "Tertiary (mint)", "default": "#8FCFB4" },
+      { "type": "header", "content": "Buttons" },
+      { "type": "color", "id": "color_button_bg", "label": "Button background", "default": "#14110F" },
+      { "type": "color", "id": "color_button_text", "label": "Button text", "default": "#F6F1E7" },
+      { "type": "color_background", "id": "gradient_hero", "label": "Hero gradient", "default": "linear-gradient(135deg, #F6F1E7 0%, #F3E3CE 100%)" }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      { "type": "header", "content": "Headings" },
+      { "type": "font_picker", "id": "font_heading", "label": "Heading font", "default": "assistant_n4" },
+      { "type": "range", "id": "heading_scale", "min": 80, "max": 160, "step": 5, "unit": "%", "label": "Heading size scale", "default": 100 },
+      { "type": "select", "id": "heading_transform", "label": "Heading letter case", "default": "none",
+        "options": [
+          { "value": "none", "label": "Normal" },
+          { "value": "uppercase", "label": "Uppercase" }
+        ] },
+      { "type": "header", "content": "Body" },
+      { "type": "font_picker", "id": "font_body", "label": "Body font", "default": "assistant_n4" },
+      { "type": "range", "id": "body_scale", "min": 90, "max": 130, "step": 5, "unit": "%", "label": "Body size scale", "default": 100 }
+    ]
+  },
+  {
+    "name": "Layout",
+    "settings": [
+      { "type": "range", "id": "page_width", "min": 1000, "max": 1600, "step": 20, "unit": "px", "label": "Page width", "default": 1280 },
+      { "type": "range", "id": "section_spacing", "min": 40, "max": 160, "step": 4, "unit": "px", "label": "Spacing between sections", "default": 96 },
+      { "type": "range", "id": "corner_radius", "min": 0, "max": 40, "step": 2, "unit": "px", "label": "Corner radius", "default": 24 },
+      { "type": "checkbox", "id": "show_grain", "label": "Show grain texture overlay", "default": true }
+    ]
+  },
+  {
+    "name": "Animations",
+    "settings": [
+      { "type": "checkbox", "id": "enable_reveal", "label": "Enable scroll reveal animations", "default": true },
+      { "type": "checkbox", "id": "enable_tilt", "label": "Enable card tilt on hover", "default": true },
+      { "type": "checkbox", "id": "enable_parallax", "label": "Enable hero parallax", "default": true },
+      { "type": "range", "id": "animation_speed", "min": 50, "max": 200, "step": 10, "unit": "%", "label": "Animation speed", "default": 100 }
+    ]
+  },
+  {
+    "name": "Product cards",
+    "settings": [
+      { "type": "checkbox", "id": "card_show_vendor", "label": "Show vendor", "default": false },
+      { "type": "checkbox", "id": "card_show_secondary_image", "label": "Show second image on hover", "default": true },
+      { "type": "checkbox", "id": "card_show_quick_add", "label": "Show quick add button", "default": true },
+      { "type": "select", "id": "card_image_ratio", "label": "Image ratio", "default": "square",
+        "options": [
+          { "value": "square", "label": "Square" },
+          { "value": "portrait", "label": "Portrait" },
+          { "value": "natural", "label": "Natural" }
+        ] }
+    ]
+  },
+  {
+    "name": "Cart",
+    "settings": [
+      { "type": "checkbox", "id": "cart_show_note", "label": "Enable order notes", "default": true },
+      { "type": "checkbox", "id": "cart_free_shipping_bar", "label": "Show free shipping progress bar", "default": true },
+      { "type": "number", "id": "cart_free_shipping_threshold", "label": "Free shipping threshold (in currency)", "default": 150 },
+      { "type": "select", "id": "cart_type", "label": "Cart type", "default": "page",
+        "options": [
+          { "value": "page", "label": "Cart page" },
+          { "value": "drawer", "label": "Cart drawer" }
+        ] }
+    ]
+  },
+  {
+    "name": "Social media",
+    "settings": [
+      { "type": "text", "id": "social_instagram_link", "label": "Instagram", "info": "https://instagram.com/shopify" },
+      { "type": "text", "id": "social_facebook_link", "label": "Facebook" },
+      { "type": "text", "id": "social_tiktok_link", "label": "TikTok" },
+      { "type": "text", "id": "social_youtube_link", "label": "YouTube" },
+      { "type": "text", "id": "social_pinterest_link", "label": "Pinterest" }
+    ]
+  },
+  {
+    "name": "Search & currency",
+    "settings": [
+      { "type": "checkbox", "id": "predictive_search_enabled", "label": "Enable predictive search", "default": true },
+      { "type": "checkbox", "id": "currency_code_enabled", "label": "Show currency codes", "default": false },
+      { "type": "checkbox", "id": "show_country_selector", "label": "Show country/region selector", "default": true },
+      { "type": "checkbox", "id": "show_language_selector", "label": "Show language selector", "default": true }
+    ]
+  }
+]

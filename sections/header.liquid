@@ -1,0 +1,31 @@
+<header class="site-header">
+  <div class="container inner">
+    <a class="brand" href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }} home">
+      <span class="brand-mark" aria-hidden="true">🐾</span>
+      <span>{% if section.settings.brand_name != blank %}{{ section.settings.brand_name }}{% else %}{{ shop.name }}{% endif %}</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="{{ routes.root_url }}">Home</a>
+      <a href="{{ routes.root_url }}#services">Services</a>
+      <a href="{{ routes.root_url }}#story">Story</a>
+      <a href="{{ routes.root_url }}#reviews">Reviews</a>
+    </nav>
+
+    <a class="btn btn-primary" href="{{ routes.root_url }}#services">Get Started</a>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "text",
+      "id": "brand_name",
+      "label": "Brand name",
+      "default": "Pawfect"
+    }
+  ]
+}
+{% endschema %}

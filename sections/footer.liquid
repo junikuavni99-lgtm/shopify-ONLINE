@@ -1,0 +1,63 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }} home">
+          <span class="brand-mark" aria-hidden="true">🐾</span>
+          <span>{% if section.settings.brand_name != blank %}{{ section.settings.brand_name }}{% else %}{{ shop.name }}{% endif %}</span>
+        </a>
+        <p style="color:var(--muted);max-width:34rem;line-height:1.7;margin:1rem 0 0">
+          {{ section.settings.footer_text }}
+        </p>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="{{ routes.root_url }}#services">Services</a></li>
+          <li><a href="{{ routes.root_url }}#story">Our Story</a></li>
+          <li><a href="{{ routes.root_url }}#reviews">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Care</h4>
+        <ul>
+          <li>Luxury grooming</li>
+          <li>Nutrition planning</li>
+          <li>Daycare club</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>hello@pawfect.example</li>
+          <li>Mon–Sat, 9am–6pm</li>
+          <li>Private appointments</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. All rights reserved.</span>
+      <span>Designed for beloved companions.</span>
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "brand_name",
+      "label": "Brand name",
+      "default": "Pawfect"
+    },
+    {
+      "type": "textarea",
+      "id": "footer_text",
+      "label": "Footer text",
+      "default": "A high-end pet care experience with polished grooming, thoughtful nutrition, and calm hospitality for modern companions."
+    }
+  ]
+}
+{% endschema %}
